@@ -1,0 +1,162 @@
+@keyframes vertical{
+  0%{top:-300px}
+  20%{top:-200px}
+  40%{top:-100px}
+  60%{top:-50px}
+  0%{top:-0px} 
+  80%{top:10px} 
+  100%{top:50px} 
+  100%{top:1000px} 
+  100%{top:200px} 
+  100%{top:300px} 
+  100%{top:400px} 
+}
+
+@keyframes rotacion {
+  from{
+      transform: rotateY(180deg);
+  }
+  to {
+      transform: rotateY(-180deg);   
+  }
+}
+
+.animacion{
+  /* alternate sirve para hacer la animacion en ambos sentidos */
+  /* animation: vertical 3 10s alternate; */
+  animation: rotacion linear infinite 5s;
+  /* animation: vertical 2 20s forwards; para que se quede estatico cuando termina la animacion*/
+  position: absolute;
+  left: 1%;
+  top: 0px; 
+  /* width: 20%;  */
+  /* height: 40%; */
+}
+
+.animacion1{
+  /* alternate sirve para hacer la animacion en ambos sentidos */
+  animation: vertical 3 10s alternate;
+  /* animation: vertical 2 20s forwards; para que se quede estatico cuando termina la animacion*/
+  position: absolute;
+  right: 3%;
+  top: -380px;
+  width: 20%; 
+}
+
+.regreso{
+  padding: 10px 20px;
+  font-size: 16px;
+  color: white;
+  background-color: #007bff;
+  border: black solid;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-top: 20px;
+  position: absolute;
+  z-index: 10;
+  top: 0;
+  left: 0;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+
+.img2{
+  width: 100%;
+  height: 100%;
+}
+
+body {
+    background: url("fondo.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin: 0;
+    height: 100vh; 
+
+      
+    font-family: 'Arial', sans-serif;
+    /*background-color: #f7f7f7;*/
+    display: flex;
+    justify-content:space-around;
+    align-items: center;
+    flex-direction: column;
+    /* height: 90vh;
+    margin: 0; */
+    
+  }
+  
+  .container {
+    text-align: center;
+    background-color: #fff;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    display: flex;
+    flex-direction: column-reverse;
+  }
+  
+  h1 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    color: #333;
+  }
+  
+  .game {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+  }
+  
+  .option {
+    font-size: 3rem;
+    margin: 0 10px;
+    padding: 20px 30px;
+    background-color: #4CAF50;
+    color: #fff;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 0.3s ease;
+  }
+  
+  .option:hover {
+    background-color: #45a049;
+  }
+  
+  #result {
+    font-size: 2rem;
+    margin-bottom: 20px;
+  }
+  
+  #score {
+    font-size: 1.5rem;
+    color: #666;
+  }
+  
+  #score span {
+    font-weight: bold;
+    margin: 0 5px;
+  }
+  
+#hojavida{
+    height:  100%;
+    width:  100%;
+}
+
+.pagina{
+  border: black solid;
+  background-color: orange;
+  border-radius: 3.5em;
+  text-decoration: none;
+  font-size: 1em;
+  color: darkblue;
+  padding: 10%;
+  width: 100%;
+}
+
+.hv{  
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
